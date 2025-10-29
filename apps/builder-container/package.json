@@ -1,0 +1,16 @@
+{
+	"name": "@docs-js/builder-container",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"format": "biome format --write",
+		"lint": "biome lint"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@docs-js/extractor": "workspace:*",
+		"@types/bun": "catalog:",
+		"@types/node": "catalog:",
+		"typescript": "catalog:"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "docs-js-web",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"compatibility_date": "2025-10-24",
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"r2_buckets": [
+		{
+			"binding": "DOCS_BUCKET",
+			"bucket_name": "docs-js"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "DOCS_DB",
+			"database_name": "docs-js",
+			"database_id": "d6f6a782-e094-49ef-845e-b912ad1573f0"
+		}
+	],
+	"services": [
+		{
+			"binding": "DOCS_BUILDER",
+			"service": "docs-js-builder"
+		}
+	]
+}

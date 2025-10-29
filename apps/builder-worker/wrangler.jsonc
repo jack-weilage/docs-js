@@ -1,0 +1,41 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "docs-js-builder",
+	"compatibility_date": "2025-10-24",
+	"main": "src/index.ts",
+	"observability": {
+		"enabled": true
+	},
+	"migrations": [
+		{
+			"new_sqlite_classes": ["BuilderContainer", "BuilderManager"],
+			"tag": "v1"
+		}
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "BUILDER_CONTAINER",
+				"class_name": "BuilderContainer"
+			},
+			{
+				"name": "BUILDER_MANAGER",
+				"class_name": "BuilderManager"
+			}
+		]
+	},
+	"containers": [
+		{
+			"class_name": "BuilderContainer",
+			"image": "../builder-container/Dockerfile",
+			"instance_type": "lite"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "DOCS_DB",
+			"database_name": "docs-js",
+			"database_id": "d6f6a782-e094-49ef-845e-b912ad1573f0"
+		}
+	]
+}

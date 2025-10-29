@@ -8,7 +8,7 @@
 	},
 	"migrations": [
 		{
-			"new_sqlite_classes": ["BuilderContainer", "BuilderManager"],
+			"new_sqlite_classes": ["BuilderContainer", "BuilderOrchestrator"],
 			"tag": "v1"
 		}
 	],
@@ -19,8 +19,8 @@
 				"class_name": "BuilderContainer"
 			},
 			{
-				"name": "BUILDER_MANAGER",
-				"class_name": "BuilderManager"
+				"name": "BUILDER_ORCHESTRATOR",
+				"class_name": "BuilderOrchestrator"
 			}
 		]
 	},

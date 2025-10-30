@@ -28,5 +28,14 @@
 			"binding": "DOCS_BUILDER",
 			"service": "docs-js-builder"
 		}
-	]
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "DOCS_BUILDER_ORCHESTRATOR",
+				"class_name": "BuilderOrchestrator",
+				"script_name": "docs-js-builder"
+			}
+		]
+	}
 }

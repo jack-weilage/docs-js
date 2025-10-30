@@ -6,6 +6,7 @@ declare namespace Cloudflare {
 		DOCS_BUCKET: R2Bucket;
 		DOCS_DB: D1Database;
 		DOCS_BUILDER: Fetcher /* docs-js-builder */;
+		DOCS_BUILDER_ORCHESTRATOR: DurableObjectNamespace<import("../../builder-worker/src/orchestrator").BuilderOrchestrator>;
 		ASSETS: Fetcher;
 	}
 }

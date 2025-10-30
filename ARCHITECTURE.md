@@ -1,0 +1,5 @@
+- [**Cloudflare Workers**](https://developers.cloudflare.com/workers/): Website hosting
+- [**Cloudflare D1**](https://developers.cloudflare.com/d1/): Core database
+- [**Cloudflare R2**](https://developers.cloudflare.com/r2/): Documentation object storage
+- [**Cloudflare Rate Limiting**](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/): Rate limiting
+- [**Cloudflare Containers**](https://developers.cloudflare.com/containers/): Serverless Docker hosting

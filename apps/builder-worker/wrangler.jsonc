@@ -28,7 +28,7 @@
 		{
 			"class_name": "BuilderContainer",
 			"image": "../builder-container/Dockerfile",
-			"instance_type": "lite"
+			"instance_type": "basic"
 		}
 	],
 	"d1_databases": [
